@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-navy font-sans;
+  }
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card rounded-xl border border-border shadow-sm p-5;
+  }
+  .btn-primary {
+    @apply bg-teal text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-opacity-90 transition-all duration-200 flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-white text-navy border border-border px-4 py-2 rounded-lg text-sm font-medium hover:bg-bg transition-all duration-200 flex items-center gap-2;
+  }
+  .badge-warning {
+    @apply bg-amber-50 text-amber-700 border border-amber-200 text-xs px-2 py-0.5 rounded-full;
+  }
+  .badge-teal {
+    @apply bg-teal bg-opacity-10 text-teal text-xs px-2 py-0.5 rounded-full;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F7F9FA; }
+::-webkit-scrollbar-thumb { background: #E3E9EC; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #667784; }
